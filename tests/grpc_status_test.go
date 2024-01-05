@@ -13,6 +13,8 @@ func TestGRPCStatus(t *testing.T) {
 		code    codes.Code
 		message string
 	}{
+		{"OK", codes.OK, "OK"},
+		{"Canceled", codes.Canceled, "Canceled"},
 		{"InvalidArgument", codes.InvalidArgument, "Invalid argument"},
 		{"DeadlineExceeded", codes.DeadlineExceeded, "Deadline exceeded"},
 		{"NotFound", codes.NotFound, "Not found"},
